@@ -1,0 +1,98 @@
+{
+  "name": "open-with-context-menu",
+  "displayName": "Open With Context Menu",
+  "description": "Add context menu items to open files with external applications. Configure multiple apps and file type associations.",
+  "version": "1.0.0",
+  "publisher": "Tarik",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "open",
+    "external",
+    "application",
+    "context menu",
+    "file association"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "openWithContextMenu.open",
+        "title": "Open with External App",
+        "category": "Open With Context Menu",
+        "icon": "$(file)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "openWithContextMenu.open",
+          "when": "true",
+          "group": "navigation@1"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "openWithContextMenu.open",
+          "when": "true",
+          "group": "navigation@1"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Open With Context Menu",
+      "properties": {
+        "openWithContextMenu.apps": {
+          "type": "array",
+          "default": [],
+          "description": "Array of app configurations. Each app can be associated with multiple file types.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Display name for the app (shown in context menu)"
+              },
+              "appName": {
+                "type": "string",
+                "description": "Application name (for macOS: app bundle name, for Windows/Linux: executable name without extension). Leave empty if using appPath."
+              },
+              "appPath": {
+                "type": "string",
+                "description": "Full path to the application executable. If provided, this takes precedence over appName. Leave empty to use appName."
+              },
+              "fileTypes": {
+                "type": "array",
+                "description": "Array of file extensions (with dot) or filenames that this app should handle (e.g., [\".md\", \".txt\", \".cursorrules\"])",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": ["name", "fileTypes"]
+          }
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarik/open-with-context-menu.git"
+  },
+  "homepage": "https://github.com/tarik/open-with-context-menu",
+  "bugs": {
+    "url": "https://github.com/tarik/open-with-context-menu/issues"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  }
+}
