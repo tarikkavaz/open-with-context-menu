@@ -88,7 +88,7 @@ Configure apps and file type associations in VS Code settings:
 ## Usage
 
 1. Right-click on a file in the Explorer or Editor
-2. Select "Open With..." from the context menu
+2. Select "Open with External App" from the context menu
 3. If multiple apps are configured for the file type, a quick pick menu will appear
 4. If only one app matches, it will open directly
 
