@@ -84,11 +84,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tarik/open-with-context-menu.git"
+    "url": "https://github.com/tarikkavaz/open-with-context-menu.git"
   },
-  "homepage": "https://github.com/tarik/open-with-context-menu",
+  "homepage": "https://github.com/tarikkavaz/open-with-context-menu",
   "bugs": {
-    "url": "https://github.com/tarik/open-with-context-menu/issues"
+    "url": "https://github.com/tarikkavaz/open-with-context-menu/issues"
   },
   "license": "MIT",
   "icon": "icon.png",
