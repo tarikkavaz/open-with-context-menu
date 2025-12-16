@@ -3,7 +3,7 @@
   "displayName": "Open With Context Menu",
   "description": "Add context menu items to open files with external applications. Configure multiple apps and file type associations.",
   "version": "1.0.0",
-  "publisher": "Tarik",
+  "publisher": "tarikkavaz",
   "engines": {
     "vscode": "^1.60.0"
   },
