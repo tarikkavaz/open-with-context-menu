@@ -161,7 +161,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 MIT
-
-## Publisher
-
-Published by [Tarik](https://marketplace.visualstudio.com/publishers/Tarik)
