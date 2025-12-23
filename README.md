@@ -189,9 +189,22 @@ Configure apps and file type associations in VS Code settings:
 {
   "openWithContextMenu.apps": [
     {
-      "name": "Sublime Text",
-      "appPath": "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl",
-      "fileTypes": [".js", ".ts", ".json", ".py"]
+      "name": "GIMP",
+      "appName": "",
+      "appPath": "/usr/bin/gimp",
+      "fileTypes": [".png", ".jpg", ".jpeg", ".gif", ".bmp", ".xcf"]
+    },
+    {
+      "name": "LibreOffice Writer",
+      "appName": "",
+      "appPath": "/usr/bin/libreoffice",
+      "fileTypes": [".doc", ".docx", ".odt", ".rtf"]
+    },
+    {
+      "name": "Okular",
+      "appName": "",
+      "appPath": "/usr/bin/okular",
+      "fileTypes": [".pdf"]
     }
   ]
 }
@@ -205,14 +218,14 @@ When multiple apps are configured for the same file type, a quick pick menu will
 {
   "openWithContextMenu.apps": [
     {
-      "name": "Typora",
-      "appName": "Typora",
-      "fileTypes": [".md"]
+      "name": "Photoshop",
+      "appName": "Photoshop",
+      "fileTypes": [".psd"]
     },
     {
-      "name": "VS Code",
-      "appName": "code",
-      "fileTypes": [".md"]
+      "name": "Preview",
+      "appName": "Preview",
+      "fileTypes": [".psd"]
     }
   ]
 }
