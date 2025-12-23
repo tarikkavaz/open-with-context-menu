@@ -63,24 +63,6 @@ ovsx install tarikkavaz.open-with-context-menu
 
 You can also install directly from the [Open VSX Registry](https://open-vsx.org/extension/tarikkavaz/open-with-context-menu) in the Extensions view.
 
-## Quick Start
-
-Add this to your VS Code `settings.json` to get started with a simple example:
-
-```json
-{
-  "openWithContextMenu.apps": [
-    {
-      "name": "Typora",
-      "appName": "Typora",
-      "fileTypes": [".md", ".markdown"]
-    }
-  ]
-}
-```
-
-Then right-click any `.md` file and select "Open Files Externally" from the context menu.
-
 ## Configuration
 
 Configure apps and file type associations in VS Code settings:
