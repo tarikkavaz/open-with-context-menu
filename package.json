@@ -1,8 +1,8 @@
 {
   "name": "open-with-context-menu",
-  "displayName": "Open With Context Menu",
+  "displayName": "Open With External App",
   "description": "Add context menu items to open files with external applications. Configure multiple apps and file type associations.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "tarikkavaz",
   "engines": {
     "vscode": "^1.60.0"
@@ -26,7 +26,7 @@
       {
         "command": "openWithContextMenu.open",
         "title": "Open with External App",
-        "category": "Open With Context Menu",
+        "category": "Open With External App",
         "icon": "$(file)"
       }
     ],
@@ -47,7 +47,7 @@
       ]
     },
     "configuration": {
-      "title": "Open With Context Menu",
+      "title": "Open With External App",
       "properties": {
         "openWithContextMenu.apps": {
           "type": "array",

@@ -165,7 +165,7 @@ function registerAppCommands(context, apps) {
   apps.forEach((app, index) => {
     const validationError = validateAppConfig(app, index);
     if (validationError) {
-      vscode.window.showWarningMessage(`Open With Context Menu: ${validationError}`);
+      vscode.window.showWarningMessage(`Open With External App: ${validationError}`);
       return;
     }
 
@@ -202,13 +202,13 @@ function registerAppCommands(context, apps) {
 }
 
 function activate(context) {
-  console.log('Open With Context Menu: Extension activating...');
+  console.log('Open With External App: Extension activating...');
   
   // Load initial configuration
   const config = vscode.workspace.getConfiguration('openWithContextMenu');
   const apps = config.get('apps', []);
 
-  console.log(`Open With Context Menu: Found ${apps.length} app(s) configured`);
+  console.log(`Open With External App: Found ${apps.length} app(s) configured`);
 
   // Register main command
   registerOpenCommand(context, apps);
@@ -216,7 +216,7 @@ function activate(context) {
   // Register individual app commands
   registerAppCommands(context, apps);
   
-  console.log('Open With Context Menu: Extension activated successfully');
+  console.log('Open With External App: Extension activated successfully');
 
   // Watch for configuration changes
   const configWatcher = vscode.workspace.onDidChangeConfiguration(e => {

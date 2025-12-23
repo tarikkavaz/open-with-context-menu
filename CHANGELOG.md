@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "Open With Context Menu" extension will be documented in this file.
+All notable changes to the "Open With External App" extension will be documented in this file.
 
 ## [1.0.0] - 2025-12-17
 
@@ -11,3 +11,8 @@ All notable changes to the "Open With Context Menu" extension will be documented
 
 ### Changed
 - Enhanced README with improved structure, troubleshooting guide, FAQ, and simplified examples
+
+## [1.0.2] - 2025-12-23
+
+### Changed
+- By Request, renamed extension to "Open With External App"

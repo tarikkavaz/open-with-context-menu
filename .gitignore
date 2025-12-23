@@ -1,4 +1,4 @@
 node_modules/
-_tools/
+_tools
 *.vsix
 .DS_Store

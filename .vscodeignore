@@ -9,3 +9,4 @@ vsc-extension-quickstart.md
 **/*.ts
 node_modules/**
 *.vsix
+_tools

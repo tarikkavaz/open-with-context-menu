@@ -1,4 +1,4 @@
-# Open With Context Menu
+# Open With External App
 
 A VS Code extension that adds context menu items to open files with external applications. Configure multiple apps and associate them with specific file types.
 
@@ -36,7 +36,7 @@ A VS Code extension that adds context menu items to open files with external app
 
 1. Open VS Code
 2. Go to Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-3. Search for "Open With Context Menu"
+3. Search for "Open With External App"
 4. Click Install
 
 ### Via Command Line (VS Code)
@@ -86,7 +86,7 @@ Then right-click any `.md` file and select "Open with External App" from the con
 Configure apps and file type associations in VS Code settings:
 
 1. Open Settings (`Ctrl+,` / `Cmd+,`)
-2. Search for "Open With Context Menu"
+2. Search for "Open With External App"
 3. Click "Edit in settings.json" to configure apps
 
 ### Configuration Format
@@ -163,7 +163,7 @@ Configure apps and file type associations in VS Code settings:
 ### Command Palette
 
 1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
-2. Type "Open With Context Menu"
+2. Type "Open With External App"
 3. Select "Open with External App"
 4. Choose the application from the quick pick menu
 
@@ -252,7 +252,7 @@ When multiple apps are configured for the same file type, a quick pick menu will
 - Verify your configuration syntax is correct (valid JSON)
 - Check that `fileTypes` array includes the extension of the file you're trying to open (with the dot, e.g., `.md`)
 - Ensure either `appName` or `appPath` is provided for each app
-- Check the Output panel for extension errors (`View` → `Output` → select "Open With Context Menu" from dropdown)
+- Check the Output panel for extension errors (`View` → `Output` → select "Open With External App" from dropdown)
 
 ### Path Issues on Windows
 
