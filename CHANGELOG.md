@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "Open With External App" extension will be documented in this file.
+All notable changes to the "Open Files Externally" extension will be documented in this file.
 
 ## [1.0.0] - 2025-12-17
 
@@ -15,4 +15,4 @@ All notable changes to the "Open With External App" extension will be documented
 ## [1.0.2] - 2025-12-23
 
 ### Changed
-- By Request, renamed extension to "Open With External App"
+- By Request, renamed extension to "Open Files Externally"

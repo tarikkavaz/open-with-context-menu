@@ -1,4 +1,4 @@
-# Open With External App
+# Open Files Externally
 
 A VS Code extension that adds context menu items to open files with external applications. Configure multiple apps and associate them with specific file types.
 
@@ -36,7 +36,7 @@ A VS Code extension that adds context menu items to open files with external app
 
 1. Open VS Code
 2. Go to Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-3. Search for "Open With External App"
+3. Search for "Open Files Externally"
 4. Click Install
 
 ### Via Command Line (VS Code)
@@ -79,14 +79,14 @@ Add this to your VS Code `settings.json` to get started with a simple example:
 }
 ```
 
-Then right-click any `.md` file and select "Open with External App" from the context menu.
+Then right-click any `.md` file and select "Open Files Externally" from the context menu.
 
 ## Configuration
 
 Configure apps and file type associations in VS Code settings:
 
 1. Open Settings (`Ctrl+,` / `Cmd+,`)
-2. Search for "Open With External App"
+2. Search for "Open Files Externally"
 3. Click "Edit in settings.json" to configure apps
 
 ### Configuration Format
@@ -156,15 +156,15 @@ Configure apps and file type associations in VS Code settings:
 ### Context Menu
 
 1. Right-click on a file in the Explorer or Editor
-2. Select "Open with External App" from the context menu
+2. Select "Open Files Externally" from the context menu
 3. If multiple apps are configured for the file type, a quick pick menu will appear
 4. If only one app matches, it will open directly
 
 ### Command Palette
 
 1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
-2. Type "Open With External App"
-3. Select "Open with External App"
+2. Type "Open Files Externally"
+3. Select "Open Files Externally"
 4. Choose the application from the quick pick menu
 
 ## Examples
@@ -236,7 +236,7 @@ When multiple apps are configured for the same file type, a quick pick menu will
 
 ### Context Menu Not Appearing
 
-**Problem**: The "Open with External App" option doesn't appear in the context menu.
+**Problem**: The "Open Files Externally" option doesn't appear in the context menu.
 
 **Solutions**:
 - Reload the VS Code window (`Ctrl+R` / `Cmd+R` or `Ctrl+Shift+P` → "Developer: Reload Window")
@@ -252,7 +252,7 @@ When multiple apps are configured for the same file type, a quick pick menu will
 - Verify your configuration syntax is correct (valid JSON)
 - Check that `fileTypes` array includes the extension of the file you're trying to open (with the dot, e.g., `.md`)
 - Ensure either `appName` or `appPath` is provided for each app
-- Check the Output panel for extension errors (`View` → `Output` → select "Open With External App" from dropdown)
+- Check the Output panel for extension errors (`View` → `Output` → select "Open Files Externally" from dropdown)
 
 ### Path Issues on Windows
 

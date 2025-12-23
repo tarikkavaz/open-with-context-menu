@@ -1,6 +1,6 @@
 {
   "name": "open-with-context-menu",
-  "displayName": "Open With External App",
+  "displayName": "Open Files Externally",
   "description": "Add context menu items to open files with external applications. Configure multiple apps and file type associations.",
   "version": "1.0.2",
   "publisher": "tarikkavaz",
@@ -25,8 +25,8 @@
     "commands": [
       {
         "command": "openWithContextMenu.open",
-        "title": "Open with External App",
-        "category": "Open With External App",
+        "title": "Open Files Externally",
+        "category": "Open Files Externally",
         "icon": "$(file)"
       }
     ],
@@ -47,7 +47,7 @@
       ]
     },
     "configuration": {
-      "title": "Open With External App",
+      "title": "Open Files Externally",
       "properties": {
         "openWithContextMenu.apps": {
           "type": "array",
